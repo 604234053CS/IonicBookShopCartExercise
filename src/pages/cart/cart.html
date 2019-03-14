@@ -72,7 +72,7 @@
         </ion-item>
         <ion-item>
         <ion-label>Address:</ion-label>
-        <ion-textarea [(ngModel)]="order.address" name="address"></ion-textarea>
+        <ion-input type="text" [(ngModel)]="order.address" name="address"></ion-input>
         </ion-item>
         <ion-item>
         <ion-label>Province:</ion-label>
@@ -82,6 +82,10 @@
          <ion-label>Postal:</ion-label>
          <ion-input type="number" [(ngModel)]="order.postal" name="postal"></ion-input>
         </ion-item>
+        <ion-item>
+            <ion-label>Call:</ion-label>
+            <ion-input type="number" [(ngModel)]="order.Call" name="Call"></ion-input>
+           </ion-item>
         <button ion-button color="secondary" type="submit" block>Confirm Order</button>
         </form>
         </div>
